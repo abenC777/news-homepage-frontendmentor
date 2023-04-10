@@ -82,9 +82,12 @@ p {
   margin-left: 1rem;
 }
 
-.nav-menu.nav__menu-item {
+.nav__menu-list ul {
+  list-style-type: none;
+}
+
+.nav__menu-list li.nav__menu-item {
   margin-bottom: 2rem;
-  list-style: none;
   font-weight: 600;
   font-size: 1.1rem;
   letter-spacing: 1.5px;
