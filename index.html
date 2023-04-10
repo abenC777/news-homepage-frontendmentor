@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="nav">
+      <div class="nav__nav-bar">
+        <div class="nav__logo-container">
+          <img src="./assets/images/logo.svg" alt="logo" />
+        </div>
+        <div class="nav__menu-list--fullscreen">
+          <ul>
+            <li class="nav__menu-item"><a href="#">Home</a></li>
+            <li class="nav__menu-item"><a href="#">New</a></li>
+            <li class="nav__menu-item"><a href="#">Popular</a></li>
+            <li class="nav__menu-item"><a href="#">Trending</a></li>
+            <li class="nav__menu-item"><a href="#">Categories</a></li>
+          </ul>
+        </div>
+        <div class="nav__menu-icon" id="open_nav">
+          <img src="./assets/images/icon-menu.svg" alt="menu-open" srcset="" />
+        </div>
+      </div>
+
+      <!-- mobile menu -->
+      <div id="nav-menu" class="nav__menu hidden">
+        <div class="nav__menu-container">
+          <div id="close_nav" class="nav__close">
+            <img src="assets/images/icon-menu-close.svg" alt="closemenu" />
+          </div>
+          <div class="nav__menu-list">
+            <ul>
+              <li class="nav__menu-item"><a href="#">Home</a></li>
+              <li class="nav__menu-item"><a href="#">New</a></li>
+              <li class="nav__menu-item"><a href="#">Popular</a></li>
+              <li class="nav__menu-item"><a href="#">Trending</a></li>
+              <li class="nav__menu-item"><a href="#">Categories</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ends nav -->
+    <main>
+      <div class="container">
+        <!-- MAIN NEWS -->
+        <section class="main-news">
+          <img
+            class="main-news__mobile-img"
+            src="assets/images/image-web-3-mobile.jpg"
+            alt="web3"
+            width="350px"
+            height="350px"
+          />
+          <img
+            class="main-news__desktop-img"
+            src="assets/images/image-web-3-desktop.jpg"
+            alt="web3"
+            width="100%"
+          />
+          <div class="main-news__text">
+            <h2 class="main-news__title">The Bright Future of Web 3.0?</h2>
+            <div class="main-news__excerpt">
+              <p class="main-news__p">
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button class="read-more-btn">READ MORE</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- DARK BLUE NEWS BLOCK -->
+        <section class="news-list-container">
+          <p class="news-list-heading">New</p>
+          <article class="news-list">
+            <h4 class="news-list__sub_heading">Hydrogen VS Electric Cars</h4>
+            <p class="news-list__text">
+              Will hydrogen-fueled cars ever catch up to EVs?
+            </p>
+          </article>
+          <hr />
+          <article class="news-list">
+            <h4 class="news-list__sub_heading">The Downsides of AI Artistry</h4>
+            <p class="news-list__text">
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </article>
+          <hr />
+          <article class="news-list">
+            <h4 class="news-list__sub_heading">Is VC Funding Drying Up?</h4>
+            <p class="news-list__text">
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </article>
+        </section>
+
+        <!-- CLEAR NEWS BLOCK SECTION -->
+        <section class="news-clear-container">
+          <article class="news-clear">
+            <img
+              class="news-clear__img"
+              src="assets/images/image-retro-pcs.jpg"
+              alt="retropc"
+              width="70px"
+            />
+
+            <div class="news-clear__body">
+              <p class="news-clear__num">01</p>
+              <h4 class="news-clear__heading">Reviving Retro PCs</h4>
+              <p class="news-clear__text">
+                What happens when old PCs are given modern upgrades?
+              </p>
+            </div>
+          </article>
+          <article class="news-clear">
+            <img
+              class="news-clear_img"
+              src="assets/images/image-top-laptops.jpg"
+              alt="retropc"
+              width="70px"
+            />
+            <div class="news-clear__body">
+              <p class="news-clear__num">02</p>
+              <h4 class="news-clear__heading">Top 10 Laptops of 2022</h4>
+              <p class="news-clear__text">
+                Our best picks for various needs and budgets.
+              </p>
+            </div>
+          </article>
+          <article class="news-clear">
+            <img
+              class="news-clear_img"
+              src="assets/images/image-gaming-growth.jpg"
+              alt="retropc"
+              width="70px"
+            />
+            <div class="news-clear__body">
+              <p class="news-clear__num">03</p>
+              <h4 class="news-clear__heading">The Growth of Gaming</h4>
+              <p class="news-clear__text">
+                How the pandemic has sparked fresh opportunities.
+              </p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+  </body>
+  <script src="./js/main.js" defer></script>
+</html>
